@@ -1,11 +1,12 @@
-# -*- coding: utf-8 -*-
-"""
-Updated Jan 21, 2018
-The primary goal of this file is to demonstrate a simple unittest implementation
+#HW 02a - Testing a legacy program and reporting on testing results
 
-@author: jrr
-@author: rk
-"""
+from datetime import date
+
+def my_brand(): 
+    print("\n=*=*=*= Zuting Chen s=*=*=*=\n")
+    print("=*=*=*= Course 2023S-SSW567-WS =*=*=*= \n")
+    print("=*=*=*= HW 02a - Testing a legacy program and reporting on testing results =*=*=*=\n") 
+    print("=*=*=*= ", date.today() ," =*=*=*= \n")
 
 import unittest
 
@@ -26,7 +27,10 @@ class TestTriangles(unittest.TestCase):
     def testEquilateralTriangles(self): 
         self.assertEqual(classifyTriangle(1,1,1),'Equilateral','1,1,1 should be equilateral')
 
+my_brand() ## START
+
 if __name__ == '__main__':
     print('Running unit tests')
     unittest.main()
 
+my_brand() ## END

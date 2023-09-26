@@ -6,7 +6,7 @@ import unittest
 def my_brand(): 
     print("\n=*=*=*= Zuting Chen s=*=*=*=\n")
     print("=*=*=*= Course 2023S-SSW567-WS =*=*=*= \n")
-    print("=*=*=*= HW 00 - Tools Setup =*=*=*=\n") 
+    print("=*=*=*= HW 01 - Testing triangle classification =*=*=*=\n") 
     print("=*=*=*= ", date.today() ," =*=*=*= \n")
 
 def classify_triangle(a, b, c):

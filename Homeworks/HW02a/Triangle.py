@@ -1,32 +1,14 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Thu Jan 14 13:44:00 2016
-Updated Jan 21, 2018
+#HW 02a - Testing a legacy program and reporting on testing results
 
-The primary goal of this file is to demonstrate a simple python program to classify triangles
+from datetime import date
 
-@author: jrr
-@author: rk
-"""
+def my_brand(): 
+    print("\n=*=*=*= Zuting Chen s=*=*=*=\n")
+    print("=*=*=*= Course 2023S-SSW567-WS =*=*=*= \n")
+    print("=*=*=*= HW 02a - Testing a legacy program and reporting on testing results =*=*=*=\n") 
+    print("=*=*=*= ", date.today() ," =*=*=*= \n")
 
 def classifyTriangle(a,b,c):
-    """
-    Your correct code goes here...  Fix the faulty logic below until the code passes all of 
-    you test cases. 
-    
-    This function returns a string with the type of triangle from three integer values
-    corresponding to the lengths of the three sides of the Triangle.
-    
-    return:
-        If all three sides are equal, return 'Equilateral'
-        If exactly one pair of sides are equal, return 'Isoceles'
-        If no pair of  sides are equal, return 'Scalene'
-        If not a valid triangle, then return 'NotATriangle'
-        If the sum of any two sides equals the squate of the third side, then return 'Right'
-      
-      BEWARE: there may be a bug or two in this code
-    """
-
     # require that the input values be >= 0 and <= 200
     if a > 200 or b > 200 or c > 200:
         return 'InvalidInput'
@@ -55,3 +37,5 @@ def classifyTriangle(a,b,c):
         return 'Scalene'
     else:
         return 'Isoceles'
+
+my_brand()
