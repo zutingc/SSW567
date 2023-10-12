@@ -22,7 +22,7 @@ class TestTriangles(unittest.TestCase):
         userId = "zutingc"
         numberRepos = len(requests.get("https://api.github.com/users/" + userId + "/repos").json())
         output = getStats(userId).count("\n")
-        self.assertEquals(output, numberRepos)
+        self.assertEqual(output, numberRepos)
         
     def test_output_format(self):
         userId = "zutingc"
