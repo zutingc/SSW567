@@ -1,17 +1,8 @@
 """ HW 02a - Testing a legacy program and reporting on testing results
 """
 
-from datetime import date
 import unittest
 from triangle import classify_triangle
-
-def my_brand():
-    """ _Header function_
-    """
-    print("\n=*=*=*= Zuting Chen s=*=*=*=\n")
-    print("=*=*=*= Course 2023S-SSW567-WS =*=*=*= \n")
-    print("=*=*=*= HW 02a - Testing a legacy program and reporting on testing results =*=*=*=\n")
-    print("=*=*=*= ", date.today() ," =*=*=*= \n")
 
 # This code implements the unit test functionality
 # https://docs.python.org/3/library/unittest.html has a nice description of the framework
@@ -72,11 +63,5 @@ class TestTriangle(unittest.TestCase):
         """
         self.assertEqual(classify_triangle(1,100,1),'NotATriangle','1,100,1 is not a triangle')
 
-
-my_brand() ## START
-
 if __name__ == '__main__':
-    print('Running unit tests')
     unittest.main()
-
-my_brand() ## END
