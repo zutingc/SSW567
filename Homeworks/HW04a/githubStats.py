@@ -37,7 +37,7 @@ def getStats(userId):
     
     return output
 
-my_brand()
-userInput = input("GitHub Username: ")
-print(getStats(userInput))
-my_brand()
+# my_brand()
+# userInput = input("GitHub Username: ")
+# print(getStats(userInput))
+# my_brand()
