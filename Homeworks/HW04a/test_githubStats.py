@@ -16,7 +16,7 @@ class TestTriangles(unittest.TestCase):
     def test_invalid_input(self):
         userId = "###Invalid_GitHub_Username###"
         output = getStats(userId)
-        self.assertEquals(output, "Error in retrieving repos")
+        self.assertEqual(output, "Error in retrieving repos")
         
     def test_amnt_repos(self):
         userId = "zutingc"
